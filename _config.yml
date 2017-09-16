@@ -1,17 +1,17 @@
-title: John Smith
-description: My Personal Blog
-author: John Smith
+title: Welcome to my Blog
+description: Charnsak's Personal Blog
+author: Charnsak Srisawatsakul
 logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/codeasashu
-about: Freelance developer
+github: https://github.com/charnsak
+about: CS&IT Lecturer 
 
-baseurl: ""
-url: ""
+baseurl: "www.charnsak.in.th"
+url: "http://www.charnsak.in.th"
 
 allowsearch: true
 
-disqus_shortname: aboutashu
-google_analytics: UA-72862926-1
+disqus_shortname: 
+google_analytics: UA-1357289-29
 
 share:
   twitter_username: \#
