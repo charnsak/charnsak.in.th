@@ -5,8 +5,8 @@ logo: /assets/19029346_10155404496081350_3011296919907074268_n.jpg
 github: https://github.com/charnsak
 about: CS&IT Lecturer 
 
-baseurl: "www.charnsak.in.th"
-url: "http://www.charnsak.in.th"
+baseurl: "http://www.charnsak.in.th"
+url: "www.charnsak.in.th"
 
 allowsearch: true
 
