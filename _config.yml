@@ -27,6 +27,5 @@ paginate_path: "/page:num/"
 markdown: kramdown
 gems: [jekyll-paginate, jekyll-gist]
 
- plugins:
-   - jekyll-admin
+ plugins: jekyll-admin
    
