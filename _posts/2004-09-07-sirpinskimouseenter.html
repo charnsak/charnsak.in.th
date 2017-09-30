@@ -31,6 +31,7 @@ author:
   first_name: ''
   last_name: ''
 ---
+{% raw %}
 <p>#include <windows.h> // use proper includes for your system#include<br />
 <math.h>#include <gl>gl.h>#include <gl</gl>glut.h>const int screenHeight = 480;class GLintPoint{public: GLint x,y;  };static GLintPoint conners[3];int random(int m){ return( rand()%m);}void drawDot(GLint x,GLint y){ //draw dot at integer point(x,y) glColor3f(1.0,0.0,0.0);<!--more--> glBegin(GL_POINTS);   glVertex2i(x,y); glEnd();}</p>
 <p>void Sierpinski(GLintPoint T[3]){ //GLintPoint T[3] = {{10,10},{300,30},{200,300}}; int index = random(3); GLintPoint point = T[index]; glClear(GL_COLOR_BUFFER_BIT);     // clear the screen  drawDot(point.x,point.y); for(int i = 0 ; i <1000 ; i++) {  index = random(3);  point.x=(point.x+T[index].x)/2;  point.y=(point.y+T[index].y)/2;  drawDot(point.x,point.y); } glFlush();}void myMouse(int button,int state,int x,int y){ glFlush(); static int numConners=0; if(button==GLUT_LEFT_BUTTON && state == GLUT_DOWN) {  conners[numConners].x=x;  conners[numConners].y=screenHeight-y;  if(++numConners==3)  {    numConners=0;  } }}</p>
@@ -39,3 +40,4 @@ author:
 <p>}</p>
 <p>//<<<<<<<<<<<<<<<<<<<<<<<br />>>>>>>>>>>>>>>>>>>> void myInit(void) {    glClearColor(1.0,1.0,1.0,0.0);       // background color is white    glColor3f(0.0f, 0.0f, 0.0f);         // drawing color is black   glPointSize(2.0);            // a 'dot' is 2 by 2 pixels glMatrixMode(GL_PROJECTION);     // set "camera shape" glLoadIdentity(); gluOrtho2D(0.0,640.0, 0.0,480.0);}//<<<<<<<<<<<<<<<<<<<<<<<<br />>>>>>>>>>>>>>>>>void myDisplay(void){ glClear(GL_COLOR_BUFFER_BIT);     // clear the screen // Sierpinski();  glFlush();     // send all output to display }//<<<<<<<<<<<<<<<<<<<<<<<<br />>>>>>>>>>>>>>>>>>>>>>void main(int argc, char** argv){ glutInit(&argc;, argv);          // initialize the toolkit glutInitDisplayMode(GLUT_SINGLE  GLUT_RGB); // set display mode glutInitWindowSize(640,480); // set window size glutInitWindowPosition(10,10); // set window position on screen glutCreateWindow("Dot Plot of a Function"); // open the screen window glutDisplayFunc(myDisplay);     // register redraw function glutMouseFunc(myMouse); glutKeyboardFunc(myKeyboard); myInit();                    glutMainLoop();        // go into a perpetual loop}</p>
 </math.h></windows.h></p>
+{% endraw %}
