@@ -1,0 +1,59 @@
+---
+layout: post
+title: Determining The Computer Name Associated With An IP Address (Windows 2k/XP/2003)
+date: 2008-02-22 08:01:00.000000000 +07:00
+type: post
+published: true
+status: publish
+categories:
+- IT Thought
+tags: []
+meta:
+  blogger_blog: deltaflyer.blogspot.com
+  blogger_permalink: "/2008/02/determining-computer-name-associated.html"
+  blogger_author: Charnsak
+  crp_related_posts: '<div id="crp_related" class="crp_related"><h3>เรื่องที่เกี่ยวข้อง:</h3><ul><li><a
+    href="http://www.charnsak.com/2014/02/phase-10-card-game-%e0%b8%aa%e0%b8%99%e0%b8%b8%e0%b8%81-%e0%b9%81%e0%b8%a5%e0%b8%b0%e0%b9%84%e0%b8%94%e0%b9%89%e0%b8%a1%e0%b8%b5%e0%b8%9b%e0%b8%8f%e0%b8%b4%e0%b8%aa%e0%b8%b1%e0%b8%a1%e0%b8%9e/"    target="_blank"  class="crp_title">Phase
+    10 &#8211; Card game สนุก และได้มีปฏิสัมพันธ์ระหว่างผู้เล่น</a><span class="crp_date">
+    February 12, 2014</span> </li><li><a href="http://www.charnsak.com/2013/08/%e0%b8%8b%e0%b8%b7%e0%b9%89%e0%b8%ad-deal-%e0%b8%95%e0%b9%88%e0%b8%b2%e0%b8%87%e0%b9%86%e0%b9%83%e0%b8%99%e0%b9%80%e0%b8%a7%e0%b9%87%e0%b8%9a-%e0%b8%84%e0%b8%b8%e0%b9%89%e0%b8%a1%e0%b8%88%e0%b8%a3/"    target="_blank"  class="crp_title">ซื้อ
+    DEAL ต่างๆในเว็บ คุ้มจริงหรือ?</a><span class="crp_date"> August 5, 2013</span>
+    </li><li><a href="http://www.charnsak.com/2012/04/information-technology-vs-information-system/"    target="_blank"  class="crp_title">Information
+    Technology VS Information System!</a><span class="crp_date"> April 27, 2012</span>
+    </li><li><a href="http://www.charnsak.com/2014/05/visited-7-countries-around-world/"    target="_blank"  class="crp_title">I
+    have visited 7% of countries around the World&#8230;</a><span class="crp_date">
+    May 27, 2014</span> </li><li><a href="http://www.charnsak.com/2014/02/review-%e0%b8%a3%e0%b9%89%e0%b8%b2%e0%b8%99%e0%b8%ad%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b9%83%e0%b8%99%e0%b9%80%e0%b8%a7%e0%b8%b5%e0%b8%a2%e0%b8%99%e0%b8%99%e0%b8%b2-cafe-merkur-%e0%b8%a3/"    target="_blank"  class="crp_title">Review
+    ร้านอาหารในเวียนนา: Cafe Merkur ร้านเล็กๆแต่เมนูหลากหลาย ราคาไม่แพง!</a><span
+    class="crp_date"> February 5, 2014</span> </li></ul></div>'
+  _wpt_view_count: '2'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1451686257;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:271;}i:1;a:1:{s:2:"id";i:114;}i:2;a:1:{s:2:"id";i:21;}}}}
+author:
+  login: Charnsak
+  email: charnsak@charnsak.com
+  display_name: Charnsak
+  first_name: ''
+  last_name: ''
+---
+<div class="Section1">
+<p class="MsoNormal"><font size="2" color="navy" face="Tahoma"><span style="font-size: 11.0pt;font-family:Tahoma;color:navy"><o:p>&nbsp;</o:p></span></font></p>
+<h1><b><font size="6" face="Tahoma"><span style="font-size:24.0pt"><a href="http://www.lockergnome.com/windows/2005/02/01/determining-the-computer-name-associated-with-an-ip-address-windows-2kxp2003/" title=" Determining The Computer Name Associated With An IP Address (Windows 2k/XP/2003)">Determining The Computer Name Associated With An IP Address (Windows 2k/XP/2003)</a><o:p></o:p></span></font></b></h1>
+<p class="postmeta"><font size="3" face="Tahoma"><span style="font-size:12.0pt">by <a href="http://www.lockergnome.com/windows/author/diana-huggins/" title="Posts by Diana Huggins">Diana Huggins</a> on February 1, 2005 at 8:14 pm &middot; <a href="http://www.lockergnome.com/windows/2005/02/01/determining-the-computer-name-associated-with-an-ip-address-windows-2kxp2003/#commentary">Comments</a> <br /> Categorized by <a href="http://www.lockergnome.com/windows/category/tips/" title="View all posts in Tips">Tips</a> / <a href="http://www.lockergnome.com/windows/2005/02/01/determining-the-computer-name-associated-with-an-ip-address-windows-2kxp2003/#related" title="Similar to Determining The Computer Name Associated With An IP Address (Windows 2k/XP/2003)">Related Information</a> <o:p></o:p></span></font></p>
+<p><font size="3" face="Tahoma"><span style="font-size:12.0pt"><!--mfunc--><?php if (function_exists('the_shared_adsense') ) the_shared_adsense('120x240_as', 120, 240, 'text_image') ;??><!--/mfunc--><!-- google_ad_section_start -->Finding the <span class="highlightedsearchterm">IP</span> address assigned to a <span class="highlightedsearchterm">computer</span> is very simple. All you have to do is open the command prompt<!--more--> and use the <span class="highlightedsearchterm">IP</span>CONFIG command. If you want to find the <span class="highlightedsearchterm">IP</span> address associated with a specific <span class="highlightedsearchterm">computer</span> <span class="highlightedsearchterm">name</span>, you can use the NBTSTAT command. The syntax for doing so is as follows:</p>
+<p> <span id="more-2026"></span>NBTSTAT -a <<span class="highlightedsearchterm">computername</span>><o:p></o:p></span></font></p>
+<p><font size="3" face="Tahoma"><span style="font-size:12.0pt">What if you want to find the <span class="highlightedsearchterm">computer</span> <span class="highlightedsearchterm">name</span> associated with a specific <span class="highlightedsearchterm">IP</span> address? The solution is simple. You can once again find the information you are looking for using the NBTSTAT command, only this time with a different switch. Instead of using -a, you will use -A and specify an <span class="highlightedsearchterm">IP</span> address as shown below:<o:p></o:p></span></font></p>
+<p><font size="3" face="Tahoma"><span style="font-size:12.0pt">NBTSTAT -A <<span class="highlightedsearchterm">ip</span>address><o:p></o:p></span></font></p>
+<p><font size="3" face="Tahoma"><span style="font-size:12.0pt">The results will tell you the <span class="highlightedsearchterm">computer</span> <span class="highlightedsearchterm">name</span> that is currently associated with the <span class="highlightedsearchterm">IP</span> address you have specified.<o:p></o:p></span></font></p>
+<p class="MsoNormal"><font size="2" color="navy" face="Tahoma"><span style="font-size: 11.0pt;font-family:Tahoma;color:navy"><o:p>&nbsp;</o:p></span></font></p>
+<p class="MsoNormal"><strong><b><font size="2" color="#333399" face="Times New Roman"><span style="font-size:10.0pt;color:#333399"><o:p>&nbsp;</o:p></span></font></b></strong></p>
+<p class="MsoNormal"><strong><span style="mso-ascii-theme-font: minor-latin; mso-hansi-theme-font: minor-latin;mso-bidi-theme-font: minor-bidi"><b><font size="2" color="#333399" face="Times New Roman"><span style="font-size:10.0pt; color:#333399"><o:p>&nbsp;</o:p></span></font></b></span></strong></p>
+<p class="MsoNormal"><strong><span style="mso-themecolor: background1;mso-themeshade: 191"><b><font size="3" color="gray" face="Times New Roman"><span style="font-size:12.0pt; color:gray">--------------------------------------</span></font></b></span></strong><font size="1" color="gray" face="Verdana"><span style="font-size:8.0pt;font-family:Verdana; color:gray"><o:p></o:p></span></font></p>
+<p class="MsoNormal"><strong><b><font size="1" color="gray" face="Verdana"><span style="font-size:9.0pt;font-family:Verdana;color:gray"><span style="mso-themecolor: background1; mso-themeshade: 191">Charnsak Srisawatsakul (Joyce)</span></span></font></b></strong><strong><b><font size="1" color="navy" face="Times New Roman"><span style="font-size:9.0pt; color:navy"><o:p></o:p></span></font></b></strong></p>
+<p> <span style="mso-ascii-theme-font: minor-latin;mso-hansi-theme-font: minor-latin; mso-bidi-theme-font: minor-bidi;mso-themecolor: background1;mso-themeshade: 191"> </span>
+<p class="MsoNormal"><strong><span style="mso-themecolor: background1;mso-themeshade: 191"><b><font size="1" color="gray" face="Verdana"><span style="font-size:9.0pt;font-family:Verdana; color:gray">Product Programme IT Team.<o:p></o:p></span></font></b></span></strong></p>
+<p class="MsoNormal"><strong><b><font size="1" color="gray" face="Verdana"><span style="font-size:9.0pt;font-family:Verdana;color:gray"><o:p>&nbsp;</o:p></span></font></b></strong></p>
+<p class="MsoNormal"><strong><span style="mso-bidi-theme-font: minor-bidi; mso-themecolor: background1;mso-themeshade: 191"><b><font size="1" color="gray" face="Verdana"><span style="font-size:9.0pt;font-family:Verdana;color:gray">Loan and Related System.</span></font></b></span></strong><strong><b><font size="2" color="navy" face="Calibri"><span style="font-size:11.0pt;font-family:Calibri; color:navy"><o:p></o:p></span></font></b></strong></p>
+<p class="MsoNormal"><strong><span style="mso-bidi-theme-font: minor-bidi; mso-themecolor: background1;mso-themeshade: 191"><b><font size="1" color="gray" face="Verdana"><span style="font-size:9.0pt;font-family:Verdana;color:gray">Bangkok Bank Public Company Limited.<o:p></o:p></span></font></b></span></strong></p>
+<p class="MsoNormal"><strong><b><font size="1" color="gray" face="Verdana"><span style="font-size:9.0pt;font-family:Verdana;color:gray">7664</span></font></b></strong><strong><b><font size="1" color="gray" face="Angsana New"><span lang="TH" style="font-size:9.0pt; font-family:\"Angsana New\";color:gray"><o:p></o:p></span></font></b></strong></p>
+<p class="MsoNormal"><font size="3" face="Times New Roman"><o:p>&nbsp;</o:p></font></p>
+</p></div></p>
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph"><spanstyle><br />----------------------------------<br />Confidentiality and Disclaimer </p>
+<p> This e-mail and any attachments hereto (the E-mail) may contain information which is confidential and/or proprietary and transmitted for the sole use of the recipient(s) named above  and for the intended purpose only. If you are not the intended recipient of the E-mail,  you are hereby notified that any review, copy, retransmission, distribution, or use of  the E-mail in any manner for any purpose is strictly prohibited and please notify the sender,  delete the original of the E-mail and destroy all copies immediately.  Bangkok Bank accepts no responsibility for any mis-transmission or virus contamination of,  or interference with, the E-mail, or for any loss or damage that may be incurred  as a result of the use of any information contained in the E-mail.&nbsp;</spanstyle><spanstyle>&nbsp;&nbsp;&nbsp; </spanstyle></p>
