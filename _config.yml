@@ -28,4 +28,4 @@ markdown: kramdown
 gems: [jekyll-paginate, jekyll-gist]   
 
 
-permalink: /:category/:title.html
+permalink: /:title.html
