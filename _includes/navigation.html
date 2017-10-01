@@ -15,6 +15,20 @@
 	<li class="col-lg-12 col-md-12 col-sm-4 col-xs-12 {{ current }} {{ pageurl }}"><a href="{{ linkurl }}" target="{{ target }}"><i class="fa {{ i.icon }}"></i> {{ i.text }}</a></li>
 {% endfor %}
 </ul>
+<h2>Categories</h2>
+
+ {% for category in site.categories %}
+        {% capture category_slug %}{{ category | first }}{% endcapture %}
+        {% for c_slug in category_slug %}
+            {% if c_slug == page.categories %}
+                <button class="btn btn-sm btn-primary btn-raised">{{ c_slug }}</button>
+            {% else %}
+                <a href="{{ site.baseurl }}/category/{{ c_slug }}" class="btn btn-sm btn-default btn-raised">{{ c_slug }}</a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+
 <h2>Archive</h2>
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %b'"  %}
 {% for yearMonth in postsByYearMonth %}
