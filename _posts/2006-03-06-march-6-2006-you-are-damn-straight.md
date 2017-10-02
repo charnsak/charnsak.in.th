@@ -1,8 +1,9 @@
 ---
-layout: post
 title: March , 6 2006 "You are DAMN straight."
-date: 2006-03-06
-tags: ["Life at India"]
+date: 2006-03-06 00:00:00 Z
+tags:
+- Life at India
+layout: post
 ---
 
 <div id="msgcns!1CF2EC57E79217F6!1114" class="bvMsg">

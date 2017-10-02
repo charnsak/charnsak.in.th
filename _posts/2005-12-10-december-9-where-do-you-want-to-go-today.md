@@ -1,8 +1,9 @@
 ---
-layout: post
 title: December 9 , Where do you want to go today?
-date: 2005-12-10
-tags: ["Life at India"]
+date: 2005-12-10 00:00:00 Z
+tags:
+- Life at India
+layout: post
 ---
 
 <div id="msgcns!1CF2EC57E79217F6!907" class="bvMsg">

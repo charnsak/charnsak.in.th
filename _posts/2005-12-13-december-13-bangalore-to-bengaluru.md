@@ -1,8 +1,9 @@
 ---
-layout: post
 title: December 13 , Bangalore to Bengaluru!!!!
-date: 2005-12-13
-tags: ["Life at India"]
+date: 2005-12-13 00:00:00 Z
+tags:
+- Life at India
+layout: post
 ---
 
 <div id="msgcns!1CF2EC57E79217F6!916" class="bvMsg">ตอนนี้ บังกาลอร์ นับเป็นเมืองศูนย์กลาง IT ที่ใหญ่ที่สุดของอินเดีย (แต่เมื่อวานนั่งรถผ่าน เจอคนถอดกางเกงทำธุระข้างทาง)

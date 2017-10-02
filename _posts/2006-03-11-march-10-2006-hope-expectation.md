@@ -1,8 +1,9 @@
 ---
-layout: post
 title: March , 10 2006 "Hope , Expectation"
-date: 2006-03-11
-tags: ["Life at India"]
+date: 2006-03-11 00:00:00 Z
+tags:
+- Life at India
+layout: post
 ---
 
 <div id="msgcns!1CF2EC57E79217F6!1122" class="bvMsg"><div>วันนี้ลองเปิดเว็บเพื่อที่จะไปฟังวิทยุออนไลน์ ไปเจอเว็บหนึงที่มีคลื่น 94.5 Sun Shine Radio ของจังหวัดสงขลาให้ฟัง ก็ลองเปิดเข้าไปฟังได้ฟัง spot โฆษณาใหม่ๆ</div>  

@@ -1,8 +1,9 @@
 ---
-layout: post
 title: Faith of The Heart
-date: 2006-01-24
-tags: ["Life at India"]
+date: 2006-01-24 00:00:00 Z
+tags:
+- Life at India
+layout: post
 ---
 
 <div id="msgcns!1CF2EC57E79217F6!1001" class="bvMsg"><div>  

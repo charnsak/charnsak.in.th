@@ -1,8 +1,9 @@
 ---
-layout: post
 title: Feburary , 14 2006 "DSS Team Lunch"
-date: 2006-02-16
-tags: ["Life at India"]
+date: 2006-02-16 00:00:00 Z
+tags:
+- Life at India
+layout: post
 ---
 
 <div class="bvMsg" id="msgcns!1CF2EC57E79217F6!1058">

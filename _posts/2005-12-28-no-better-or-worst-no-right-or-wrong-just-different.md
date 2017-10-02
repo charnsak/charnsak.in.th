@@ -1,8 +1,9 @@
 ---
-layout: post
 title: No better or worst. No right or wrong. Just Different!
-date: 2005-12-28
-tags: ["Life at India"]
+date: 2005-12-28 00:00:00 Z
+tags:
+- Life at India
+layout: post
 ---
 
 <div class="bvMsg" id="msgcns!1CF2EC57E79217F6!974">
