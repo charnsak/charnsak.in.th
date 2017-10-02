@@ -1,13 +1,11 @@
 ---
-layout: post
 title: Cannot create/shadow copy when that file already exists
-date: 2008-02-08 04:59:00.000000000 +07:00
-type: post
-published: true
-status: publish
+date: 2008-02-07 21:59:00 Z
 categories:
 - IT Thought
-tags: []
+layout: post
+type: post
+status: publish
 meta:
   blogger_blog: deltaflyer.blogspot.com
   blogger_permalink: "/2008/02/cannot-createshadow-copy-when-that-file.html"
@@ -32,6 +30,7 @@ author:
   first_name: ''
   last_name: ''
 ---
+
 <div class="Section1">
 <h3 style="background:#CCDDBB"><b><font size="4" color="#333333" face="Verdana"><span style="font-size:13.5pt;font-family:Verdana;color:#333333"><a href="http://neilkilbride.blogspot.com/2007/05/cannot-createshadow-copy-when-that-file.html">Cannot create/shadow copy when that file already exists</a> <o:p></o:p></span></font></b></h3>
 <p style="background:#CCDDBB"><font size="2" color="#333333" face="Verdana"><span style="font-size:10.0pt;font-family:Verdana;color:#333333">The .Net Framework has a feature called <b><span style="font-weight:bold">Shadow Copy</span></b>. Shadow copy is enabled on every appdomain created by ASP.NET by default. By default assemblies loaded will be copied to a shadow copy cache directory, and will be used from that location. <b><span style="font-weight:bold">Why<!--more--> does ASP.Net do this?</span></b> <i><span style="font-style:italic">So the original file is not locked and can be modified.</span></i> An interesting error I have ran into intermittently when running ASP.Net apps with the debugger is '<b><span style="font-weight:bold">Cannot create/shadow copy when that file already exists</span></b>' I'm still not sure why this happens only on occasion, as I can often clean my solution, then reload a web app and it will work fine then. But if you are getting it frequently enough for it to affect your work, you can add the following to your app's web.config or the master .Net web.config: <o:p></o:p></span></font></p>

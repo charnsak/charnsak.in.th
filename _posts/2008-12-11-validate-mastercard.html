@@ -1,13 +1,11 @@
 ---
-layout: post
 title: Validate MasterCard
-date: 2008-12-11 11:00:00.000000000 +07:00
-type: post
-published: true
-status: publish
+date: 2008-12-11 04:00:00 Z
 categories:
 - IT Thought
-tags: []
+layout: post
+type: post
+status: publish
 meta:
   blogger_blog: deltaflyer.blogspot.com
   blogger_permalink: "/2008/12/validate-mastercard.html"
@@ -20,6 +18,7 @@ author:
   first_name: ''
   last_name: ''
 ---
+
 <p><html> <head> <title>MasterCard Example</title> <script type="text/javascript"><br  />                function luhnCheckSum(sCardNum) {<br  /><br  />                    var iOddSum = 0;<br  />                    var iEvenSum = 0;<br  />                    var bIsOdd = true;<br  /><br  />                    for (var i=sCardNum.length-1; i >= 0; i--) {<br  /><br  />                        var iNum = parseInt(sCardNum.charAt(i));<br<!--more-->  /><br  />                        if (bIsOdd) {<br  />                            iOddSum += iNum;<br  />                        } else {<br  />                            iNum = iNum * 2;<br  />                            if (iNum > 9) {<br  />                                iNum = eval(iNum.toString().split("").join("+"));<br  />                            }<br  />                            iEvenSum += iNum;<br  />                        }<br  /><br  />                        bIsOdd = !bIsOdd;<br  />                    }<br  /><br  />                    return ((iEvenSum + iOddSum) % 10 == 0);<br  />                }<br  /><br  />                function isValidMasterCard(sText) {<br  />                    var reMasterCard = /^(5[1-5]d{2})[s-]?(d{4})[s-]?(d{4})[s-]?(d{4})$/;<br  /><br  />                    if (reMasterCard.test(sText)) {<br  /><br  />                        var sCardNum = RegExp.$1 + RegExp.$2 + RegExp.$3 + RegExp.$4;<br  /><br  />                        return luhnCheckSum(sCardNum);<br  /><br  />                    } else {<br  />                        return false;<br  />                    }<br  />                }<br  /><br  />                function validate() {<br  />                    var oInput1 = document.getElementById("txt1");<br  />                    if (isValidMasterCard(oInput1.value)) {<br  />                        alert("Valid");<br  />                    } else {<br  />                        alert("Invalid!");<br  />                    }<br  /><br  />                }<br  />        </script> </head> <body>
 <p>MasterCard Number: <input type="text" id="txt1" /><br /> <input type="button" value="Validate" onclick="validate()" /></p>
 <p> </body> </html> Quote from: Professional JavaScript for Web Developers by Nicholas C. Zakas (Author)  # Paperback: 672 pages # Publisher: Wrox (April 22, 2005) # Language: English # ISBN-10: 0764579088 # ISBN-13: 978-0764579080  </p>

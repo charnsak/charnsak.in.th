@@ -1,13 +1,11 @@
 ---
-layout: post
 title: Using DateTimeFormatInfo
-date: 2007-06-18 11:00:00.000000000 +07:00
-type: post
-published: true
-status: publish
+date: 2007-06-18 04:00:00 Z
 categories:
 - IT Thought
-tags: []
+layout: post
+type: post
+status: publish
 meta:
   blogger_blog: deltaflyer.blogspot.com
   blogger_permalink: "/2007/06/using-datetimeformatinfo.html"
@@ -28,4 +26,5 @@ author:
   first_name: ''
   last_name: ''
 ---
+
 <p>string strDate = "21-07-2006";        System.Globalization.DateTimeFormatInfo dtfi = new System.Globalization.DateTimeFormatInfo();        dtfi.ShortDatePattern = "dd-MM-yyyy";        dtfi.DateSeparator = "-";        DateTime objDate = Convert.ToDateTime(strDate, dtfi);        Response.Write(objDate);IFormatProvider<!--more--> theCultureInfo = new System.Globalization.CultureInfo("en-GB", true);using ParseExactDateTime theDateTime = DateTime.ParseExact("10-12-2006", "mm-dd-yyyy", theCultureInfo);Response.Write(theDateTime);using CultureInfo System.Globalization.CultureInfo cf = new System.Globalization.CultureInfo("en-US");DateTime dt = DateTime.Parse("11-11-2005", cf);string sdt = dt.ToString(cf);Response.Write(sdt);</p>

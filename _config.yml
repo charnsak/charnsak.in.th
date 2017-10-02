@@ -1,31 +1,33 @@
+---
 title: Welcome to my Blog
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 description: Charnsak's Personal Blog
 author: Charnsak Srisawatsakul, Ph.D
-logo: /assets/19029346_10155404496081350_3011296919907074268_n.jpg
+logo: "/assets/19029346_10155404496081350_3011296919907074268_n.jpg"
 github: https://github.com/charnsak
 about: CS&IT Lecturer, Researcher, Content writer
-
 baseurl: "/"
-url: "http://www.charnsak.in.th"
-
+url: http://www.charnsak.in.th
 allowsearch: true
-
 disqus_shortname: 
 google_analytics: UA-1357289-29
-
 share:
-  twitter_username: \#
-  fb_appid: 000000000000
-
-
+  twitter_username: "\\#"
+  fb_appid: 0
 enableTags: true
 tagarray: []
-
 paginate: 20
 per_page: 20
 paginate_path: "/page:num/"
 markdown: kramdown
-gems: [jekyll-paginate, jekyll-gist]   
-
-
-permalink: /:title.html
+gems:
+- jekyll-paginate
+- jekyll-gist
+permalink: "/:title.html"
