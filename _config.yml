@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  ddd:
+    title: ddd
+    output: true
 description: Charnsak's Personal Blog
 author: Charnsak Srisawatsakul, Ph.D
 logo: "/assets/19029346_10155404496081350_3011296919907074268_n.jpg"
