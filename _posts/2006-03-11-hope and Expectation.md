@@ -1,10 +1,7 @@
 ---
 title: 'March , 10 2006 "Hope , Expectation"'
-date: {}
-tags:
-  - Life
-  - at
-  - India
+date: 2006-03-10
+tags: Life at India
 layout: post
 published: true
 ---
