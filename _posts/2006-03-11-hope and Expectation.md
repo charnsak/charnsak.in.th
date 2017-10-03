@@ -33,4 +33,3 @@ published: true
 ![1141381067.jpg]({{site.baseurl}}/assets/1141381067.jpg)
 
 
-![1141381067.jpg]({{site.baseurl}}/_posts/1141381067.jpg)
