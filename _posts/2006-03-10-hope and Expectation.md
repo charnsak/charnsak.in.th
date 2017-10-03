@@ -1,9 +1,11 @@
 ---
-title: 'March , 10 2006 "Hope , Expectation"'
-date: 2006-03-10
-tags: Life at India
+title: March , 10 2006 "Hope , Expectation"
+date: 2006-03-10 00:00:00 Z
+tags:
+- Life
+- at
+- India
 layout: post
-published: true
 ---
 
 ### วันนี้ลองเปิดเว็บเพื่อที่จะไปฟังวิทยุออนไลน์ ไปเจอเว็บหนึงที่มีคลื่น 94.5 Sun Shine Radio ของจังหวัดสงขลาให้ฟัง ก็ลองเปิดเข้าไปฟังได้ฟัง spot โฆษณาใหม่ๆ
